@@ -1,0 +1,131 @@
+body{
+    background-color: beige;
+    font-family: 'Karla', sans-serif;
+}
+
+/*센터 정렬*/
+.flexContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+}
+
+/*자식에게 플렉스 속성을 주려면 부모가 속성을 가져야한다.*/
+.cardContainer{
+    display:flex;
+    flex-wrap:wrap;
+    width: 700px;
+    height : 500px;
+}
+
+.item1{
+    width:100%;
+    height:45%;
+    align-items : center;
+    background-color : white;
+    border-radius: 10px 10px 0 0;
+}
+.item1 > p {
+    padding-left : 50px;
+}
+.item1_p1{
+    font-size:1.5rem;
+    font-weight : bold;
+    color:hsl(179, 62%, 43%);
+    padding-top : 30px;
+}
+
+.item1_p2{
+    font-size:1rem;
+    color:hsl(71, 73%, 54%);
+}
+
+.item1_p3{
+    font-size:16px;
+    color:hsl(218, 22%, 67%);
+}
+
+.item2{
+    width:50%;
+    height:55%;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+}
+
+.item2 > p {
+    margin-left : 50px;
+}
+
+.item2_p1{
+    margin-top : 50px;
+    color:white;
+    font-size:20px;
+}
+
+.item2_p2 {
+    color:hsl(204, 43%, 93%);
+}
+
+.item2_p3{
+    color:white;
+}
+
+.item2_p2 > span{
+    color:white;
+    font-size:32px;
+}
+
+.item2 > button {
+    margin-left : 50px;
+    color:white;
+    font-size:20px;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: 5px;
+    width:250px;
+    height:50px;
+}
+
+.item3{
+    width:50%;
+    height:55%;
+    background-color: hsl(179, 58%, 48%);
+    border-radius: 0 0 10px 0;
+}
+
+.item3 > p{
+    margin-left : 50px;
+}
+
+.item3_p1{
+    margin-top:50px;
+    color:white;
+    font-size:20px;
+}
+
+.item3_p2{
+    color:hsl(204, 43%, 93%);
+}
+
+
+/*mobile*/
+@media (max-width: 375px) {
+    body {
+      background-color: lightsalmon;
+    }
+    .cardContainer{
+        flex-direction: column;
+        flex-wrap:nowrap;
+    }
+    .item1{
+        width:100%;
+    }
+    .item2{
+        width:100%;
+    }
+    .item3{
+        width:100%;
+    }
+}
