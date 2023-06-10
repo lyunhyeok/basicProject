@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="flex-container">
+
+      <div id="item1">
+        <img src="images/logo.svg" alt="logo" id="logo">
+        <span id="title"><span id="title-color">We're</span> coming soon</span>
+        <span id="description"> Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</span>
+        <form id="input-form">
+          <input type="email" placeholder="Email Address" id="input-email" maxlength="25" required/>
+          <img id="errorIcon" src="images/icon-error.svg" alt="icon-error" class="hidden">
+          <button id="input-button"><img src="images/icon-arrow.svg" alt="button-arrow"></button>
+        </form>
+        <div id="errorMsg" class="hidden"></div>
+      </div>
+
+      <div id="item2">
+        <img src="images/hero-desktop.jpg" alt="hero-desktop" id="hero-image">
+      </div>
+
+    </div>
+  </div>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Lyunhyeok</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
